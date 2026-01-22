@@ -21,9 +21,9 @@
 
 body {
   background: 
-    radial-gradient(1200px circle at 70% 10%, rgba(96, 165, 250, 0.188), transparent),
-    radial-gradient(900px circle at 30% 90%, rgba(37, 80, 145, 0.203), transparent),
-    linear-gradient(60deg , rgba(2, 6, 23, 0.463), rgba(2, 6, 23, 0.262)),
+    radial-gradient(1200px circle at 70% 10%, rgba(96, 165, 250, 0.245), transparent),
+    radial-gradient(900px circle at 30% 90%, rgba(32, 80, 152, 0.224), transparent),
+    linear-gradient(60deg , rgba(2, 6, 23, 0.577), rgba(2, 6, 23, 0.338)),
     url("/site-bg.png") center top / cover no-repeat fixed;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
