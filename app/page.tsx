@@ -1,10 +1,14 @@
 import Image from "next/image";
 import StickyHeaderName from "@/components/StickyHeaderName";
 import WelcomeMessage from "@/components/WelcomeMessage";
+import ScrollOnPageLoad from "@/components/ScrollOnPageLoad";
+import BlockScroll from "@/components/BlockScroll";
 
 export default function Home() {
   return (
     <>
+      <BlockScroll time={5500} />
+      <ScrollOnPageLoad />
       <WelcomeMessage />
       <main className="min-h-screen flex flex-col items-center justify-center text-white mt-30">
         <div>
