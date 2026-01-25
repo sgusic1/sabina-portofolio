@@ -1,5 +1,5 @@
 import Image from "next/image";
-import StickyHeaderName from "@/components/StickyHeaderName";
+import StickyHeaderName from "@/components/HeaderName";
 import WelcomeMessage from "@/components/WelcomeMessage";
 import ScrollOnPageLoad from "@/components/ScrollOnPageLoad";
 import BlockScroll from "@/components/BlockScroll";

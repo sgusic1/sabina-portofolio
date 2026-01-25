@@ -1,9 +1,9 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 
-function useInView(options?: IntersectionObserverInit) {
+function useInView<T extends HTMLElement>(options?: IntersectionObserverInit) {
   const [inView, setInView] = useState(false);
-  const refName = useRef<HTMLElement | null>(null);
+  const refName = useRef<T | null>(null);
 
   useEffect(() => {
     if (!refName.current) return;
