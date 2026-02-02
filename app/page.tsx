@@ -7,7 +7,7 @@ import BlockScroll from "@/components/BlockScroll";
 export default function Home() {
   return (
     <>
-      <BlockScroll time={5500} />
+      <BlockScroll time={12000} />
       <ScrollOnPageLoad />
       <WelcomeMessage />
       <main className="min-h-screen flex flex-col items-center justify-center text-white mt-30">
