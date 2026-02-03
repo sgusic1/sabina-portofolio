@@ -7,7 +7,8 @@ function ScrollOnPageLoad(props: { x?: number; y?: number }) {
   const y = props.y ?? 0;
 
   useEffect(() => {
-    window.scrollTo(x, y);
+    if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+    requestAnimationFrame(() => window.scrollTo(x, y));
   }, []);
 
   return null;
