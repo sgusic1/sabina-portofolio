@@ -46,26 +46,35 @@
   --radius-4xl: calc(var(--radius) + 16px);
 }
 
-body {
+html {
   background:
     radial-gradient(
-      1200px circle at 70% 10%,
-      rgba(96, 165, 250, 0.245),
+      1200px circle at 70% 5%,
+      rgba(96, 165, 250, 0.243),
       transparent
     ),
     radial-gradient(
       900px circle at 30% 90%,
-      rgba(32, 80, 152, 0.224),
+      rgba(32, 80, 152, 0.197),
       transparent
     ),
-    linear-gradient(60deg, rgba(2, 6, 23, 0.577), rgba(2, 6, 23, 0.338)),
-    url("/site-bg.png") center top / cover no-repeat fixed;
+    linear-gradient(
+      60deg,
+      rgba(2, 6, 23, 0.163) 0%,
+      rgba(2, 6, 23, 0.231) 40%,
+      rgba(2, 6, 23, 0.349) 100%
+    ),
+    url("/site-bg.png") center top / cover repeat-y fixed;
 
   font-family: var(--font-geist-mono);
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
-html {
-  scroll-behavior: smooth;
+body {
+  background: transparent;
+  font-family: var(--font-geist-mono);
+  overscroll-behavior-y: none;
 }
 
 :root {
